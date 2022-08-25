@@ -1,7 +1,8 @@
-// ignore_for_file: sort_child_properties_last
+// ignore_for_file: sort_child_properties_last, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nubank/pages/account/account.dart';
 import '../../utils/colors.dart';
 import 'models/header.dart';
 
@@ -21,7 +22,10 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Container(
           child: Column(
-            children: const [Header()],
+            children: const [
+              Header(),
+              AccountNubank()
+            ],
           ),
         ),
       ),
